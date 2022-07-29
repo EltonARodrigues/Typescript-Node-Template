@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es2020",
+    "esModuleInterop": true,
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    // Needed for CommonJS modules
+    // "allowSyntheticDefaultImports": true,
+    //
+    "rootDir": "./src",
+    "declaration": true,
+    "paths": {
+      "*": ["./src/types/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types/*"
+    ],
+  }
+}

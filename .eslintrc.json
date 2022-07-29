@@ -1,0 +1,35 @@
+{
+  "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "env": { "jest": true, "browser": true },
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "rules": {
+    "ignoreStrings": 0,
+    "allowForLoopAfterthoughts": 0,
+    "curly": 0,
+    "nonblock-statement-body-position": 0,
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "import/prefer-default-export": "error",
+    "import/no-unresolved": 0,
+    "no-underscore-dangle": ["error", { "allow": ["__typename"] }],
+    // "@typescript-eslint/no-unused-vars": [0, { "args": "none" }],
+    "@typescript-eslint/lines-between-class-members": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "d.ts": "never"
+      }
+    ]
+  }
+}
